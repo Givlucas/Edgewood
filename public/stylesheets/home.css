@@ -1,0 +1,15 @@
+.heroimg {
+  background-image:linear-gradient(rgba(0, 0, 0, 0),80% , black 98%), url("/images/golf-course-one.jpg");
+  width: 100vw;
+  height: 50vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* #404040 */
+.who {
+  width: 100vw;
+  min-height: 40vh;
+  background: black;
+}
