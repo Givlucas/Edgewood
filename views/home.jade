@@ -2,6 +2,27 @@ extends layout
 
 block content
   link(rel='stylesheet', href='/stylesheets/home.css')
+  link(rel='stylesheet', href='/stylesheets/activities.css')
   
   div.heroimg
   div.who
+    div.whotitle
+      h1 Who are we?
+    div.who-tiles
+      div#tile-one.who-tile
+        div.tile-icon
+          img(src="/images/wine.svg")
+        div.tile-text
+          p We are West Virginia's premiere club, providing the finest services and facilities throughout the mountain state. The cuisine and experience of dining at the club are superb and provide exceptional views of the valley.
+      div#tile-two.who-tile
+        div.tile-icon
+          img(src="/images/racket.svg")
+        div.tile-text
+          p We offer a full range of recreational and social activities for the entire family, with youth and adult programs throughout the year. Our atmosphere is warm and inviting, creating an enjoyable and unique experience for each member.
+        
+      div#tile-three.who-tile
+        div.tile-icon
+          img(src="/images/golf.svg")
+        div.tile-text
+          p Our deluxe facilities include an 18 hole championship Golf course, Har-tru tennis courts, double and singles Squash courts, Fitness facility and Swim complex. Our Racquets Pro, Fitness Pro and PGA Golf Pro are all available year-round, to keep you and your game in top form.
+  div.activities
