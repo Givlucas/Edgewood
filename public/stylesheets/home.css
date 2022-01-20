@@ -10,7 +10,7 @@
 
 .who {
   width: 100%;
-  min-height: 500px;
+  height: 40vw;
   background: black;
   position: relative;
 }
@@ -30,7 +30,7 @@
   position: absolute;
   display: flex;
   width: 100%;
-  height: 90%;
+  height: 80%;
 }
 
 .who-tile {
@@ -67,11 +67,14 @@
   color: white;
   text-align: center;
   transition: 1s;
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 2vw;
+
 }
 
-@media screen and (max-aspect-ratio: 4 / 3){
+@media screen and (max-aspect-ratio: 9 / 16){
+  .who  {
+    height: 60vh
+  }
   .who-tiles {
     align-items: center;
     flex-direction: column;
@@ -81,13 +84,14 @@
     flex-direction: row;
     width: 90%;
     height: 30%;
+    padding-top: 2.5%;
   }
 
   .tile-icon {
     width: auto;
   }
   .tile-icon img {
-    height: 16vw;
+    height: 5vh;
   }
 
   .tile-text {
@@ -103,7 +107,7 @@
 
   .tile-text {
     text-align: left;
-    font-size: 1em;
+    font-size: .7em;
     font-weight: bold;
   }
   .tile-text p{
