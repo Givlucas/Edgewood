@@ -5,19 +5,18 @@ html
     link(rel='stylesheet', href='/stylesheets/index.css')
     meta( name='viewport', content='width=device-width, initial-scale=1' )
   body
-      div.header
+      div#head.header
         img(src='/images/logo.svg')
         div.title
           h1 Edgewood Country Club
-          h3 Heritage & Excellence
         div.dropbutton
           div#burger.hamburger
             div.ham
           script(src="javascripts/layout.js")
           div.dropcontent
-            a Home
+            a(href="#homemarker") Home
             a Membership
-            a Amenities
+            a(href="#amenititiesmarker") Amenities
             a Hours
             a Private Events
             a Member Login

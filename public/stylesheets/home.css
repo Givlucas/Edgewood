@@ -1,16 +1,29 @@
 .heroimg {
   background-image:linear-gradient(rgba(0, 0, 0, 0),80% , black 98%), url("/images/golf-course-one.jpg");
   width: 100%;
-  height: 50vh;
+  height: 60vh;
 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.heroimg h1 {
+  font-family: 'The Nautigal', cursive;
+  color: white;
+  font-size: 5em
+}
+
+.mobile {
+  display: none;
 }
 
 .who {
   width: 100%;
-  height: 40vw;
+  height: 35vw;
   background: black;
   position: relative;
 }
@@ -20,10 +33,12 @@
   text-align: center;
   height: 10%;
   color: white;
+  font-size: 2vw
 }
 .whotitle h1{
   margin: 0;
   padding: 0;
+  margin-bottom: 50px;
 }
 
 .who-tiles {
@@ -54,27 +69,43 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .tile-icon img{
   height: 5vw;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .tile-text{
   width: 100%;
   color: white;
   text-align: center;
-  transition: 1s;
-  font-size: 2vw;
-
+  transition: 0.5s;
+  font-size: 1.6vw;
+  align-self: center;
+  font-weight: bold;
 }
 
+
 @media screen and (max-aspect-ratio: 9 / 16){
-  .who  {
-    height: 60vh
+  .desktop {
+    display: none;
   }
+
+  .mobile {
+    display: block;
+    text-align: center;
+  }
+
+  .who  {
+    height: 65vh
+  }
+
+  .whotitle {
+    font-size: 3vh;
+  }
+
   .who-tiles {
     align-items: center;
     flex-direction: column;
@@ -107,7 +138,7 @@
 
   .tile-text {
     text-align: left;
-    font-size: .7em;
+    font-size: 1.7vh;
     font-weight: bold;
   }
   .tile-text p{
@@ -115,13 +146,4 @@
     padding-top: 1.5%;
   }
 
-}
-
-
-@media screen and (max-aspect-ratio: 9 / 16){
-  .tile-text {
-    text-align: left;
-    font-size: .9em;
-    font-weight: bold;
-  }
 }

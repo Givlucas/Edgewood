@@ -1,6 +1,102 @@
 
-.activities {
+#text-img {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  min-height: 40vw;
+  height: 50vw;
+  background-color: black;
+  position: absolute;
+  align-items: center;
+}
+
+#img-text {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#amenitities-titles {
+  color: white;
+  font-family: 'The Nautigal', cursive;
+  font-size: 4vw;
+  text-align: center;
+}
+
+#amenitities-text {
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: bold;
+  padding: 5%;
+}
+
+#di {
+  height: 100%;
+  width: 50%;
+}
+
+.dinner-img {
+
+  border-radius: 20px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0),90% , black 98%),linear-gradient(to left, rgba(0, 0, 0, 0),80% , black 98%), linear-gradient(rgba(0, 0, 0, 0),80% , black 98%), url("/images/dinner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.golf-img {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0),90% , black 98%),linear-gradient(to right, rgba(0, 0, 0, 0),80% , black 98%), linear-gradient(rgba(0, 0, 0, 0),80% , black 98%), url("/images/golf-course-two.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: red;
+}
+
+.test-text {
+  background-color: blue;
+}
+
+.test-img {
+  background-color: red;
+}
+
+
+
+
+@media screen and (max-aspect-ratio: 9 / 16) {
+  #text-img {
+      flex-direction: column;
+      min-height: 60vh;
+  }
+  #di {
+    width: 100%;
+    height: 50%;
+  }
+
+  #amenitities-titles{
+    font-size: 4vh;
+  }
+
+  #amenitities-text {
+    font-size: 1.5vh;
+  }
+
+  .dinner-text p {
+    font-size: 1.5vh;
+  }
+
+  .dinner-img {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0),90% , black 98%), linear-gradient(rgba(0, 0, 0, 0),80% , black 98%), url("/images/dinner.jpg");
+    background-position: center;
+  }
+
+  #img-text {
+    flex-direction: column-reverse;
+  }
+
+  .golf-img{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0),90% , black 98%), linear-gradient(rgba(0, 0, 0, 0),80% , black 98%), url("/images/golf-course-two.jpg");
+  }
 }
