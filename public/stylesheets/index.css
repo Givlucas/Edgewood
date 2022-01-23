@@ -21,9 +21,16 @@ body{
   flex-direction: column;
 }
 
+.buffer {
+  position: relative;
+  height: 225px;
+  width: 100%;
+  transition: 1s;
+}
+
 .header{
   display: inline-flex;
-  position: relative;
+  position: absolute;
   padding-top: 1%;
   padding-bottom: 1%;
   background-color: Black;
@@ -34,7 +41,8 @@ body{
 }
 
 .header img {
-  transition: transform 0.4s;
+  height: 225px;
+  transition:1s;
 }
 
 .title{
@@ -196,6 +204,7 @@ body{
   position: fixed;
   top: 0;
   width: 100%;
+  transition: 1s;
 }
 
 .sticky img {
@@ -207,9 +216,24 @@ body{
   padding-top: 225px;
 }
 
+.shrink {
+  height: 10vh !important;;
+  transition: 1s;
+}
+
 @media screen and (max-aspect-ratio: 4 / 3){
+  .shrink img{
+    height: 10vh !important;
+    transition: 1s;
+  }
+
   .header img{
     height: 20vh;
+  }
+
+  .buffer {
+    height: 20vh;
+    transition: 1s;
   }
 
   .title h3{
@@ -222,6 +246,11 @@ body{
 
 @media screen and (max-aspect-ratio: 9 / 16){
   .header img{
+    height: 10vh;
+    transition: 1s;
+  }
+
+  .buffer {
     height: 10vh;
     transition: 1s;
   }

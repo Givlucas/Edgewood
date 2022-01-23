@@ -5,8 +5,9 @@ html
     link(rel='stylesheet', href='/stylesheets/index.css')
     meta( name='viewport', content='width=device-width, initial-scale=1' )
   body
+      div#buff.buffer
       div#head.header
-        img(src='/images/logo.svg')
+        img#img(src='/images/logo.svg')
         div.title
           h1 Edgewood Country Club
         div.dropbutton
@@ -14,7 +15,7 @@ html
             div.ham
           script(src="javascripts/layout.js")
           div.dropcontent
-            a(href="#homemarker") Home
+            a(href="#buff") Home
             a Membership
             a(href="#amenititiesmarker") Amenities
             a Hours

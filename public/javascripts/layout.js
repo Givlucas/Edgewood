@@ -17,13 +17,19 @@ menubtn.addEventListener('click', () => {
 window.onscroll = function() {stickyHeader()};
 
 var header = document.getElementById("head");
+var buffer = document.getElementById("buff");
+var img = document.getElementById("img");
 
 var sticky = header.offsetTop;
 
 function stickyHeader() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
+    buffer.classList.add("shrink");
+    img.classList.add("shrink");
   } else {
     header.classList.remove("sticky");
+    buffer.classList.remove("shrink");
+    img.classList.remove("shrink");
   }
 }
