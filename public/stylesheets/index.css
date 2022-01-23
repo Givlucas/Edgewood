@@ -162,7 +162,40 @@ body{
 .dropbutton.open .dropcontent {
   height: 300px;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 1s;
+}
+
+.sticky img {
+  height: 10vh;
+  transition: 1s;
+}
+
+.sticky + .content {
+  padding-top: 225px;
+}
+
+.shrink {
+  height: 6vh !important;
+  transition: 1s;
+}
+
+.shrink-txt h1{
+  font-size: 2vw;
+  text-align: left;
+}
+
+.grow {
+  width: 90%;
+}
+
 /*NAV END */
+
+
 
 /* FOOTER BEGIN */
 
@@ -200,26 +233,7 @@ body{
 }
 /*TOOLS END*/
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  transition: 1s;
-}
 
-.sticky img {
-  height: 10vh;
-  transition: 1s;
-}
-
-.sticky + .content {
-  padding-top: 225px;
-}
-
-.shrink {
-  height: 10vh !important;;
-  transition: 1s;
-}
 
 @media screen and (max-aspect-ratio: 4 / 3){
   .shrink img{
@@ -269,6 +283,15 @@ body{
     left: -300%;
   }
 
+  .shrink-txt h1{
+    font-size: 4vw;
+    text-align: left;
+  }
+
+  .grow {
+    width: 80%;
+  }
+
   .footer {
     font-size: 0.5em
   }
@@ -280,4 +303,6 @@ body{
     height: 60vh;
   }
   /*Tools end*/
+
+
 }
