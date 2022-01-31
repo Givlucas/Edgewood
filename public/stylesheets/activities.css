@@ -47,6 +47,7 @@
 }
 
 .golf-img {
+  border-radius: 20px;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0),90% , black 98%),linear-gradient(to right, rgba(0, 0, 0, 0),80% , black 98%), linear-gradient(rgba(0, 0, 0, 0),80% , black 98%), url("/images/golf-course-two.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -54,16 +55,53 @@
   background-color: red;
 }
 
-.test-text {
-  background-color: blue;
+.rac-img {
+
+  border-radius: 20px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0),90% , black 98%),linear-gradient(to left, rgba(0, 0, 0, 0),80% , black 98%), linear-gradient(rgba(0, 0, 0, 0),80% , black 98%), url("/images/Tennis.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.test-img {
+.pool-img {
+  border-radius: 20px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0),90% , black 98%),linear-gradient(to right, rgba(0, 0, 0, 0),80% , black 98%), linear-gradient(rgba(0, 0, 0, 0),80% , black 98%), url("/images/pool.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: red;
 }
 
+.spa-img {
+  border-radius: 20px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0),90% , black 98%),linear-gradient(to left, rgba(0, 0, 0, 0),80% , black 98%), linear-gradient(rgba(0, 0, 0, 0),80% , black 98%), url("/images/spa.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.gym-img {
+  border-radius: 20px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0),90% , black 98%),linear-gradient(to right, rgba(0, 0, 0, 0),80% , black 98%), linear-gradient(rgba(0, 0, 0, 0),80% , black 98%), url("/images/gym.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: red;
 
+}
+
+.hours {
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hours p {
+  padding-left: 30%;
+  padding-right: 30%;
+}
 
 @media screen and (max-aspect-ratio: 9 / 16) {
   #text-img {
@@ -99,4 +137,26 @@
   .golf-img{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0),90% , black 98%), linear-gradient(rgba(0, 0, 0, 0),80% , black 98%), url("/images/golf-course-two.jpg");
   }
+
+  .rac-img {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0),90% , black 98%), linear-gradient(rgba(0, 0, 0, 0),80% , black 98%), url("/images/Tennis.jpg");
+  }
+
+  .pool-img {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0),90% , black 98%), linear-gradient(rgba(0, 0, 0, 0),80% , black 98%), url("/images/pool.jpg");
+  }
+
+  .spa-img {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0),90% , black 98%), linear-gradient(rgba(0, 0, 0, 0),80% , black 98%), url("/images/spa.jpg");
+  }
+
+  .gym-img {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0),90% , black 98%), linear-gradient(rgba(0, 0, 0, 0),80% , black 98%), url("/images/gym.jpg");
+  }
+
+  .hours p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
 }
